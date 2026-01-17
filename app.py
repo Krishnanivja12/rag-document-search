@@ -7,6 +7,8 @@ from src.loader import load_documents, get_document_info
 from src.splitter import split_documents, get_chunk_info
 from src.vector_store import build_vector_store, get_retriever
 from src.rag_chain import run_rag
+import os
+from dotenv import load_dotenv
 
 
 # Streamlit secrets से API key लें
