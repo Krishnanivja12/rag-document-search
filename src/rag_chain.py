@@ -39,7 +39,7 @@ def get_llm() -> ChatOpenAI:
         api_key=settings.OPENROUTER_API_KEY,  # Fixed parameter name
         base_url=settings.OPENROUTER_BASE_URL,  # Fixed parameter name
         temperature=settings.LLM_TEMPERATURE,
-        max_tokens=1000,
+        max_tokens=200,
         default_headers={
             "HTTP-Referer": "https://github.com/yourusername/rag-app",
             "X-Title": "RAG Document Assistant"
