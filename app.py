@@ -8,6 +8,21 @@ from src.splitter import split_documents, get_chunk_info
 from src.vector_store import build_vector_store, get_retriever
 from src.rag_chain import run_rag
 
+
+# Streamlit secrets से API key लें
+if "OPENROUTER_API_KEY" in st.secrets:
+    os.environ["OPENROUTER_API_KEY"] = st.secrets["OPENROUTER_API_KEY"]
+    if "USER_AGENT" in st.secrets:
+        os.environ["USER_AGENT"] = st.secrets["USER_AGENT"]
+else:
+    # Local development के लिए .env file use करें
+    from dotenv import load_dotenv
+    load_dotenv()
+
+# Check करें कि API key मिली या नहीं
+if not os.getenv("OPENROUTER_API_KEY"):
+    st.error("⚠️ OPENROUTER_API_KEY not found. Please add it in Streamlit secrets.")
+    st.stop()
 # Validate settings on startup
 try:
     settings.validate()
