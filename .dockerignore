@@ -1,0 +1,67 @@
+# Virtual environments
+.venv
+venv
+ENV
+env
+.venv/
+
+# Python cache
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+
+# Git
+.git
+.gitignore
+.gitattributes
+
+# IDEs
+.vscode
+.idea
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Documentation
+README.md
+*.md
+docs/
+
+# Testing
+tests/
+.pytest_cache
+.coverage
+htmlcov/
+
+# Logs
+*.log
+logs/
+
+# UV specific
+uv.lock
+.python-version
+
+# Environment files (will be passed at runtime)
+.env
+.env.local
+.env.*.local
+
+# Temporary files
+temp/
+tmp/
+*.tmp
+
+# Uploaded files (will be generated at runtime)
+uploaded_files/
+faiss_index/
+
+# Docker files
+Dockerfile*
+docker-compose*.yml
+.dockerignore
