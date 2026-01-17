@@ -20,7 +20,7 @@ class Settings:
     # For main LLM (text generation)
     LLM_MODEL: str = os.getenv(
         "LLM_MODEL",
-        "openai/chatgpt-4o-latest"  # Free model
+        "nvidia/nemotron-3-nano-30b-a3b:free"  # Free model
         # Alternatives:
         # "google/gemma-2-9b-it:free"
         # "microsoft/phi-3-mini-128k-instruct:free"
