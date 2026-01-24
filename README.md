@@ -55,6 +55,12 @@ Install dependencies
 ```bash
 pip install -r requirements.txt
 ```
+Environment Variables
+This project requires an OpenRouter API key to access LLM services.
+```env
+OPENROUTER_API_KEY=Enter_your_openrouter_api_key
+USER_AGENT=rag-openrouter-app/1.0
+```
 Run the application locally
 ```bash
 streamlit run app.py
@@ -76,3 +82,4 @@ Scalable vector database integration
 Krishna<br>
 B.Tech Student | Data Science Intern<br>
 Focus: AI, Machine Learning, LLMs, RAG Systems
+
